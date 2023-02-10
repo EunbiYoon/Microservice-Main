@@ -7,7 +7,7 @@ import requests
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost:33067/main'
+app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:root@db/main"
 CORS(app)
 
 db = SQLAlchemy(app)
